@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Team = (props) => {
+  const { team } = props;
   return (
     <div>
-      <p>Takım Üyeleri </p>
+      {team.map((member) => (
+        <p>
+          {member.name} - {member.email}
+        </p>
+      ))}
     </div>
   );
 };

@@ -7,6 +7,7 @@ const Form = (props) => {
       <label>
         Name
         <input
+          autoFocus
           onChange={handleChange}
           value={newMember.name}
           type="text"
@@ -19,7 +20,7 @@ const Form = (props) => {
           onChange={handleChange}
           value={newMember.email}
           type="text"
-          name="e-mail"
+          name="email"
         />
       </label>
       <label>
